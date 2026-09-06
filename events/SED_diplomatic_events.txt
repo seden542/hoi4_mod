@@ -1,44 +1,6 @@
 add_namespace = SED
 
 country_event = {
-    id = SED.1
-    title = SED.1.t
-    desc = SED.1.d
-    picture = GFX_report_event_generic_diplomatic_exchange
-    is_triggered_only = yes
-
-    option = {
-        name = SED.1.a
-        ai_chance = { factor = 70 }
-        hidden_effect = { country_event = { id = SED.2 days = 1 } }
-    }
-    option = {
-        name = SED.1.b
-        ai_chance = { factor = 30 }
-        FROM = { add_opinion_modifier = { target = ROOT modifier = refused_territorial_demand } }
-    }
-}
-
-country_event = {
-    id = SED.2
-    title = SED.2.t
-    desc = SED.2.d
-    picture = GFX_report_event_generic_diplomatic_exchange
-    is_triggered_only = yes
-
-    option = {
-        name = SED.2.a
-        ai_chance = { factor = 75 }
-        annex_country = { target = FROM }
-    }
-    option = {
-        name = SED.2.b
-        ai_chance = { factor = 25 }
-        add_war_support = 0.05
-    }
-}
-
-country_event = {
     id = SED.10
     title = SED.10.t
     desc = SED.10.d
@@ -47,14 +9,14 @@ country_event = {
 
     option = {
         name = SED.10.a
-        ai_chance = { factor = 65 }
-        transfer_state = 5
-        add_stability = -0.05
+        ai_chance = { factor = 70 }
+        SED = { annex_country = { target = AUS } }
     }
     option = {
         name = SED.10.b
-        ai_chance = { factor = 35 }
-        FROM = { add_war_goal = { type = take_state_focus = 5 } }
+        ai_chance = { factor = 30 }
+        SED = { add_war_support = 0.05 }
+        SED = { declare_war_on = { target = AUS type = annex_everything } }
     }
 }
 
@@ -68,13 +30,12 @@ country_event = {
     option = {
         name = SED.11.a
         ai_chance = { factor = 60 }
-        transfer_state = 73
-        add_stability = -0.05
+        SED = { add_state_core = 73 }
     }
     option = {
         name = SED.11.b
         ai_chance = { factor = 40 }
-        FROM = { add_war_goal = { type = take_state_focus = 73 } }
+        SED = { declare_war_on = { target = CZE type = annex_everything } }
     }
 }
 
@@ -88,12 +49,11 @@ country_event = {
     option = {
         name = SED.12.a
         ai_chance = { factor = 55 }
-        transfer_state = 85
-        add_stability = -0.05
+        SED = { add_state_core = 85 }
     }
     option = {
         name = SED.12.b
         ai_chance = { factor = 45 }
-        FROM = { add_war_goal = { type = take_state_focus = 85 } }
+        SED = { declare_war_on = { target = POL type = annex_everything } }
     }
 }
