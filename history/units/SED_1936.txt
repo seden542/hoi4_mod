@@ -3,6 +3,7 @@ units = {
     division_template = "SED_Reserve_Infantry"
     division_template = "SED_Motorized"
     division_template = "SED_Armored"
+    division_template = "SED_Mountain"
 
     division = {
         name = "1. Seden Infantry Division"
@@ -23,20 +24,26 @@ units = {
     }
 
     division = {
-        name = "4. Seden Reserve Division"
-        location = 9402
-        division_template = "SED_Reserve_Infantry"
+        name = "4. Seden Infantry Division"
+        location = 6402
+        division_template = "SED_Infantry"
     }
 
     division = {
         name = "5. Seden Reserve Division"
+        location = 9398
+        division_template = "SED_Reserve_Infantry"
+    }
+
+    division = {
+        name = "6. Seden Reserve Division"
         location = 11245
         division_template = "SED_Reserve_Infantry"
     }
 
     division = {
-        name = "1. Alpine Division"
-        location = 9372
+        name = "1. Motorized Division"
+        location = 3351
         division_template = "SED_Motorized"
     }
 
@@ -47,8 +54,20 @@ units = {
     }
 
     division = {
-        name = "1. Motorized Division"
-        location = 3351
-        division_template = "SED_Motorized"
+        name = "1. Mountain Division"
+        location = 9372
+        division_template = "SED_Mountain"
+    }
+
+    division = {
+        name = "7. Seden Infantry Division"
+        location = 266
+        division_template = "SED_Infantry"
+    }
+
+    division = {
+        name = "8. Seden Infantry Division"
+        location = 11386
+        division_template = "SED_Infantry"
     }
 }
