@@ -1,0 +1,84 @@
+characters = {
+    SED_Adolf_Hermann = {
+        name = "세든"
+        country_leader = {
+            ideology = fascism
+            traits = { charismatic }
+        }
+    }
+
+    SED_Friedrich_Keller = {
+        name = "프리드리히 켈러"
+        corps_commander = {
+            skill = 3
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 2
+            traits = { offensive_doctrine }
+        }
+    }
+
+    SED_Ernst_Vogel = {
+        name = "에른스트 포겔"
+        corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 3
+            logistics_skill = 3
+            traits = { defensive_doctrine }
+        }
+    }
+
+    SED_Wilhelm_Brandt = {
+        name = "빌헬름 브란트"
+        corps_commander = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 2
+            traits = { panzer_leader }
+        }
+    }
+
+    SED_Karl_Meissner = {
+        name = "카를 마이스너"
+        corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 4
+            traits = { organizer }
+        }
+    }
+
+    SED_Hans_Reuter = {
+        name = "한스 로이터"
+        advisor = {
+            slot = political_advisor
+            cost = 150
+            traits = { political_connections }
+        }
+    }
+
+    SED_Otto_Falk = {
+        name = "오토 팔크"
+        advisor = {
+            slot = military_high_command
+            cost = 150
+            traits = { army_chief_offensive_2 }
+        }
+    }
+
+    SED_Martin_Weber = {
+        name = "마르틴 베버"
+        advisor = {
+            slot = theorist
+            cost = 150
+            traits = { army_theory }
+        }
+    }
+}
