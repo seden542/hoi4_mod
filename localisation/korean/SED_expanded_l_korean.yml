@@ -19,6 +19,8 @@ l_korean:
  SED_common_citizenship:0 "공동 시민권"
  SED_national_reconciliation:0 "국민 화합"
  SED_sedman_state:0 "세드만 국가"
+ SED_annex_germany:0 "독일 합병"
+ SED_annex_germany_desc:0 "분열된 독일의 통합을 완수하고 독일 전역을 하나의 국가 아래에 결집한다."
  SED_anschluss_question:0 "오스트리아 문제"
  SED_czechoslovak_demand:0 "체코슬로바키아 영토 요구"
  SED_danzig_demand:0 "단치히 요구"
