@@ -1,0 +1,33 @@
+units = {
+    division_template = "SED_Infantry"
+
+    division = {
+        name = "1. Seden Infantry Division"
+        location = 5
+        division_template = "SED_Infantry"
+    }
+
+    division = {
+        name = "2. Seden Infantry Division"
+        location = 5
+        division_template = "SED_Infantry"
+    }
+
+    division = {
+        name = "1. Alpine Division"
+        location = 5
+        division_template = "SED_Mountain"
+    }
+
+    division = {
+        name = "1. Armored Division"
+        location = 5
+        division_template = "SED_Armored"
+    }
+
+    division = {
+        name = "1. Motorized Division"
+        location = 5
+        division_template = "SED_Motorized"
+    }
+}
