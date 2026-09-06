@@ -1,87 +1,55 @@
 add_namespace = SED
 
-# 독일 합병: GER 측에서 수락/거부를 선택
 country_event = {
     id = SED.9
     title = SED.9.t
     desc = SED.9.d
     picture = GFX_report_event_generic_diplomatic_exchange
     is_triggered_only = yes
-
-    option = {
-        name = SED.9.a
-        ai_chance = { factor = 70 }
-        SED = { annex_country = GER }
-    }
-    option = {
-        name = SED.9.b
-        ai_chance = { factor = 30 }
-        SED = {
-            add_war_support = 0.05
-            declare_war_on = { target = GER type = annex_everything }
-        }
-    }
+    option = { name = SED.9.a ai_chance = { factor = 70 } SED = { annex_country = GER } }
+    option = { name = SED.9.b ai_chance = { factor = 30 } SED = { add_war_support = 0.05 declare_war_on = { target = GER type = annex_everything } } }
 }
 
-# 오스트리아 통합 요구: AUS 측에서 수락/거부를 선택
 country_event = {
     id = SED.10
     title = SED.10.t
     desc = SED.10.d
     picture = GFX_report_event_generic_diplomatic_exchange
     is_triggered_only = yes
-
-    option = {
-        name = SED.10.a
-        ai_chance = { factor = 70 }
-        SED = { annex_country = AUS }
-    }
-    option = {
-        name = SED.10.b
-        ai_chance = { factor = 30 }
-        SED = {
-            add_war_support = 0.05
-            declare_war_on = { target = AUS type = annex_everything }
-        }
-    }
+    option = { name = SED.10.a ai_chance = { factor = 70 } SED = { annex_country = AUS } }
+    option = { name = SED.10.b ai_chance = { factor = 30 } SED = { add_war_support = 0.05 declare_war_on = { target = AUS type = annex_everything } } }
 }
 
-# 체코슬로바키아 영토 요구: CZE 측에서 수락/거부를 선택
 country_event = {
     id = SED.11
     title = SED.11.t
     desc = SED.11.d
     picture = GFX_report_event_generic_diplomatic_exchange
     is_triggered_only = yes
-
-    option = {
-        name = SED.11.a
-        ai_chance = { factor = 60 }
-        SED = { add_state_core = 73 }
-    }
-    option = {
-        name = SED.11.b
-        ai_chance = { factor = 40 }
-        SED = { declare_war_on = { target = CZE type = annex_everything } }
-    }
+    option = { name = SED.11.a ai_chance = { factor = 60 } SED = { add_state_core = 73 } }
+    option = { name = SED.11.b ai_chance = { factor = 40 } SED = { declare_war_on = { target = CZE type = annex_everything } } }
 }
 
-# 단치히 및 폴란드 영토 요구: POL 측에서 수락/거부를 선택
 country_event = {
     id = SED.12
     title = SED.12.t
     desc = SED.12.d
     picture = GFX_report_event_generic_diplomatic_exchange
     is_triggered_only = yes
+    option = { name = SED.12.a ai_chance = { factor = 0 } SED = { add_state_core = 85 } }
+    option = { name = SED.12.b ai_chance = { factor = 100 } SED = { add_war_support = 0.10 declare_war_on = { target = POL type = annex_everything } } }
+}
 
+# 제2차 세계대전: 폴란드의 거부로 유럽 전쟁이 본격화된다.
+country_event = {
+    id = SED.20
+    title = SED.20.t
+    desc = SED.20.d
+    picture = GFX_report_event_generic_major_event
+    is_triggered_only = yes
     option = {
-        name = SED.12.a
-        ai_chance = { factor = 55 }
-        SED = { add_state_core = 85 }
-    }
-    option = {
-        name = SED.12.b
-        ai_chance = { factor = 45 }
-        SED = { declare_war_on = { target = POL type = annex_everything } }
+        name = SED.20.a
+        ai_chance = { factor = 100 }
+        SED = { add_war_support = 0.15 add_political_power = 100 declare_war_on = { target = POL type = annex_everything } }
     }
 }
