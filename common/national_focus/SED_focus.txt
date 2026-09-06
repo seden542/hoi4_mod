@@ -91,8 +91,10 @@ focus_tree = {
         x = 0
         y = 5
         cost = 10
-        prerequisite = { focus = SED_sebensraum }
-        prerequisite = { focus = SED_korean_empire_alliance }
+        prerequisite = {
+            focus = SED_sebensraum
+            focus = SED_korean_empire_alliance
+        }
         completion_reward = {
             add_war_support = 0.10
             add_army_experience = 25
