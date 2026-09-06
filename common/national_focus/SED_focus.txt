@@ -46,7 +46,9 @@ focus_tree = {
     focus = { id = SED_panzer_doctrine icon = GFX_focus_GER_adopt_new_panzer_doctrine_historical x = 0 y = 5 cost = 10 prerequisite = { focus = SED_army_modernization } completion_reward = { add_army_experience = 20 } }
     focus = { id = SED_german_army_invincible icon = GFX_focus_GER_german_army_invincible x = 0 y = 6 cost = 10 prerequisite = { focus = SED_panzer_doctrine } completion_reward = { add_war_support = 0.05 } }
 
-    focus = { id = SED_anschluss_question icon = GFX_focus_GER_anschluss_historical x = 6 y = 8 cost = 10 prerequisite = { focus = SED_sedman_state } completion_reward = { AUS = { country_event = { id = SED.10 } } } }
+    # 독일 통합을 오스트리아 문제보다 먼저 처리한다.
+    focus = { id = SED_annex_germany icon = GFX_focus_GER_integrated_economies x = 6 y = 7 cost = 10 prerequisite = { focus = SED_sedman_state } completion_reward = { add_state_core = 5 add_political_power = 150 add_stability = 0.05 set_country_flag = SED_germany_unified } }
+    focus = { id = SED_anschluss_question icon = GFX_focus_GER_anschluss_historical x = 6 y = 8 cost = 10 prerequisite = { focus = SED_annex_germany } completion_reward = { AUS = { country_event = { id = SED.10 } } } }
     focus = { id = SED_czechoslovak_demand icon = GFX_focus_GER_fate_of_czechoslovakia_historical x = 6 y = 9 cost = 10 prerequisite = { focus = SED_anschluss_question } completion_reward = { CZE = { country_event = { id = SED.11 } } } }
     focus = { id = SED_danzig_demand icon = GFX_focus_GER_danzig_or_war_historical x = 6 y = 10 cost = 10 prerequisite = { focus = SED_czechoslovak_demand } completion_reward = { POL = { country_event = { id = SED.12 } } } }
     focus = { id = SED_further_polish_demands icon = GFX_focus_GER_further_demands_for_polish_territory x = 6 y = 11 cost = 10 prerequisite = { focus = SED_danzig_demand } completion_reward = { add_war_support = 0.05 } }
