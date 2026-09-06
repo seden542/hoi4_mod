@@ -1,0 +1,7 @@
+l_english:
+ SED_INF_01: "1. Seden Infantry Division"
+ SED_INF_02: "2. Seden Infantry Division"
+ SED_MTN_01: "1. Alpine Division"
+ SED_ARM_01: "1. Armored Division"
+ SED_ARM_02: "2. Armored Division"
+ SED_MOT_01: "1. Motorized Division"
