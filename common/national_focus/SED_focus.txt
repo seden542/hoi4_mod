@@ -10,103 +10,72 @@ focus_tree = {
     focus = { id = SED_national_council icon = GFX_focus_GER_rally_the_industrialists x = 2 y = 4 cost = 10 prerequisite = { focus = SED_civil_service_reform } completion_reward = { add_stability = 0.05 } }
     focus = { id = SED_constitutional_question icon = GFX_focus_GER_monarchy_compromise x = 2 y = 5 cost = 10 prerequisite = { focus = SED_national_council } completion_reward = { add_political_power = 75 } }
 
-    # 정치적 갈림길. 한 루트를 선택하면 나머지 루트는 상호 배타된다.
-    # 민주주의/권위주의/왕정은 내전으로 정권을 전환하고 세드만 체제만 평화적으로 전환한다.
     focus = { id = SED_democratic_route icon = GFX_focus_GER_defender_of_democracy x = -4 y = 6 cost = 10 prerequisite = { focus = SED_constitutional_question } mutual_exclusive = { focus = SED_authoritarian_route focus = SED_monarchy_route focus = SED_sedman_route } completion_reward = { set_politics = { ruling_party = democratic elections_allowed = yes } start_civil_war = { ideology = democratic size = 0.35 } add_stability = -0.10 add_political_power = 100 } }
     focus = { id = SED_authoritarian_route icon = GFX_focus_GER_total_control_over_domestic_affairs x = -1 y = 6 cost = 10 prerequisite = { focus = SED_constitutional_question } mutual_exclusive = { focus = SED_democratic_route focus = SED_monarchy_route focus = SED_sedman_route } completion_reward = { set_politics = { ruling_party = neutrality elections_allowed = no } start_civil_war = { ideology = neutrality size = 0.35 } add_stability = -0.10 add_political_power = 100 } }
     focus = { id = SED_monarchy_route icon = GFX_focus_GER_monarchy_compromise x = 2 y = 6 cost = 10 prerequisite = { focus = SED_constitutional_question } mutual_exclusive = { focus = SED_democratic_route focus = SED_authoritarian_route focus = SED_sedman_route } completion_reward = { set_politics = { ruling_party = neutrality elections_allowed = no } start_civil_war = { ideology = neutrality size = 0.35 } add_stability = -0.10 add_political_power = 100 } }
     focus = { id = SED_sedman_route icon = GFX_focus_GER_german_hegemony x = 5 y = 6 cost = 10 prerequisite = { focus = SED_constitutional_question } mutual_exclusive = { focus = SED_democratic_route focus = SED_authoritarian_route focus = SED_monarchy_route } completion_reward = { set_politics = { ruling_party = fascism elections_allowed = no } add_stability = 0.10 add_war_support = 0.10 add_political_power = 100 } }
 
-    # 민주주의 루트
     focus = { id = SED_republican_reforms icon = GFX_focus_GER_defender_of_democracy x = -4 y = 7 cost = 10 prerequisite = { focus = SED_democratic_route } completion_reward = { add_stability = 0.10 add_political_power = 75 } }
     focus = { id = SED_expand_parliament icon = GFX_focus_GER_defender_of_democracy x = -4 y = 8 cost = 10 prerequisite = { focus = SED_republican_reforms } completion_reward = { add_political_power = 100 } }
     focus = { id = SED_local_autonomy icon = GFX_focus_GER_european_confederation x = -4 y = 9 cost = 10 prerequisite = { focus = SED_expand_parliament } completion_reward = { add_stability = 0.05 } }
     focus = { id = SED_civic_national_identity icon = GFX_focus_GER_national_unity x = -4 y = 10 cost = 10 prerequisite = { focus = SED_local_autonomy } completion_reward = { add_political_power = 100 } }
     focus = { id = SED_republican_compromise icon = GFX_focus_GER_realpolitik x = -4 y = 11 cost = 10 prerequisite = { focus = SED_civic_national_identity } completion_reward = { add_stability = 0.10 } }
-    focus = { id = SED_democratic_economy icon = GFX_focus_GER_rally_the_industrialists x = -6 y = 12 cost = 10 prerequisite = { focus = SED_republican_compromise } completion_reward = { add_political_power = 75 } }
-    focus = { id = SED_workers_and_industry icon = GFX_focus_GER_factories_for_resources x = -6 y = 13 cost = 10 prerequisite = { focus = SED_democratic_economy } completion_reward = { add_stability = 0.05 } }
-    focus = { id = SED_defender_of_liberty icon = GFX_focus_GER_defender_of_democracy x = -6 y = 14 cost = 10 prerequisite = { focus = SED_workers_and_industry } completion_reward = { add_war_support = 0.05 add_political_power = 100 } }
-    focus = { id = SED_european_democracy icon = GFX_focus_GER_european_confederation x = -6 y = 15 cost = 10 prerequisite = { focus = SED_defender_of_liberty } completion_reward = { add_stability = 0.10 } }
 
-    # 권위주의 루트
     focus = { id = SED_prussian_tradition icon = GFX_focus_GER_prussian_legacy x = -1 y = 7 cost = 10 prerequisite = { focus = SED_authoritarian_route } completion_reward = { add_political_power = 50 } }
     focus = { id = SED_officer_corps icon = GFX_focus_GER_appease_the_wehrmacht x = -1 y = 8 cost = 10 prerequisite = { focus = SED_prussian_tradition } completion_reward = { add_army_experience = 10 } }
     focus = { id = SED_national_reconstruction_cabinet icon = GFX_focus_GER_realpolitik x = -1 y = 9 cost = 10 prerequisite = { focus = SED_officer_corps } completion_reward = { add_stability = 0.05 } }
     focus = { id = SED_state_tradition icon = GFX_focus_GER_prussian_legacy x = -1 y = 10 cost = 10 prerequisite = { focus = SED_national_reconstruction_cabinet } completion_reward = { add_political_power = 100 } }
     focus = { id = SED_authority_of_state icon = GFX_focus_GER_support_the_fuhrer x = -1 y = 11 cost = 10 prerequisite = { focus = SED_state_tradition } completion_reward = { add_stability = 0.10 } }
-    focus = { id = SED_central_command icon = GFX_focus_GER_total_control_over_domestic_affairs x = -2 y = 12 cost = 10 prerequisite = { focus = SED_authority_of_state } completion_reward = { add_army_experience = 15 } }
-    focus = { id = SED_state_security icon = GFX_focus_GER_total_control_over_domestic_affairs x = -2 y = 13 cost = 10 prerequisite = { focus = SED_central_command } completion_reward = { add_stability = 0.10 add_political_power = 75 } }
-    focus = { id = SED_authoritarian_industry icon = GFX_focus_GER_rally_the_industrialists x = -2 y = 14 cost = 10 prerequisite = { focus = SED_state_security } completion_reward = { add_political_power = 100 } }
-    focus = { id = SED_order_and_discipline icon = GFX_focus_GER_prussian_legacy x = -2 y = 15 cost = 10 prerequisite = { focus = SED_authoritarian_industry } completion_reward = { add_war_support = 0.10 } }
 
-    # 왕정 루트
     focus = { id = SED_royal_restoration icon = GFX_focus_GER_monarchy_compromise x = 2 y = 7 cost = 10 prerequisite = { focus = SED_monarchy_route } completion_reward = { add_stability = 0.10 add_political_power = 75 } }
     focus = { id = SED_restore_the_crown icon = GFX_focus_GER_prussian_legacy x = 2 y = 8 cost = 10 prerequisite = { focus = SED_royal_restoration } completion_reward = { add_political_power = 100 } }
     focus = { id = SED_constitutional_monarchy icon = GFX_focus_GER_monarchy_compromise x = 2 y = 9 cost = 10 prerequisite = { focus = SED_restore_the_crown } completion_reward = { add_stability = 0.10 } }
     focus = { id = SED_royal_army icon = GFX_focus_GER_reorganize_the_wehrmacht x = 2 y = 10 cost = 10 prerequisite = { focus = SED_constitutional_monarchy } completion_reward = { add_army_experience = 20 } }
     focus = { id = SED_crown_and_state icon = GFX_focus_GER_national_unity x = 2 y = 11 cost = 10 prerequisite = { focus = SED_royal_army } completion_reward = { add_stability = 0.10 add_political_power = 100 } }
-    focus = { id = SED_royal_diplomacy icon = GFX_focus_GER_realpolitik x = 2 y = 12 cost = 10 prerequisite = { focus = SED_crown_and_state } completion_reward = { add_political_power = 100 } }
-    focus = { id = SED_imperial_council icon = GFX_focus_GER_national_unity x = 2 y = 13 cost = 10 prerequisite = { focus = SED_royal_diplomacy } completion_reward = { add_stability = 0.05 } }
-    focus = { id = SED_royal_industry icon = GFX_focus_GER_rally_the_industrialists x = 2 y = 14 cost = 10 prerequisite = { focus = SED_imperial_council } completion_reward = { add_political_power = 100 } }
-    focus = { id = SED_crown_in_the_modern_age icon = GFX_focus_GER_monarchy_compromise x = 2 y = 15 cost = 10 prerequisite = { focus = SED_royal_industry } completion_reward = { add_stability = 0.10 } }
 
-    # 세드만 국가체제 루트
     focus = { id = SED_sedman_civic_identity icon = GFX_focus_GER_propaganda_master x = 5 y = 7 cost = 10 prerequisite = { focus = SED_sedman_route } completion_reward = { add_political_power = 100 } }
     focus = { id = SED_cultural_institutes icon = GFX_focus_GER_fund_the_film_department x = 5 y = 8 cost = 10 prerequisite = { focus = SED_sedman_civic_identity } completion_reward = { add_stability = 0.05 } }
     focus = { id = SED_public_education icon = GFX_focus_GER_reich_ministry_of_public_enlightenment x = 5 y = 9 cost = 10 prerequisite = { focus = SED_cultural_institutes } completion_reward = { add_political_power = 75 } }
     focus = { id = SED_common_citizenship icon = GFX_focus_GER_national_unity x = 5 y = 10 cost = 10 prerequisite = { focus = SED_public_education } completion_reward = { add_stability = 0.10 } }
     focus = { id = SED_national_reconciliation icon = GFX_focus_GER_realpolitik x = 5 y = 11 cost = 10 prerequisite = { focus = SED_common_citizenship } completion_reward = { add_stability = 0.10 } }
     focus = { id = SED_sedman_state icon = GFX_focus_GER_german_hegemony x = 5 y = 12 cost = 10 prerequisite = { focus = SED_national_reconciliation } completion_reward = { add_political_power = 150 add_war_support = 0.05 } }
-    focus = { id = SED_sedman_economy icon = GFX_focus_GER_autarky_ambitions x = 5 y = 13 cost = 10 prerequisite = { focus = SED_sedman_state } completion_reward = { add_ideas = SED_economic_autarky } }
-    focus = { id = SED_sedman_army icon = GFX_focus_GER_german_army_invincible x = 5 y = 14 cost = 10 prerequisite = { focus = SED_sedman_economy } completion_reward = { add_army_experience = 25 add_war_support = 0.05 } }
-    focus = { id = SED_sedman_future icon = GFX_focus_GER_hegemony_over_europe x = 5 y = 15 cost = 10 prerequisite = { focus = SED_sedman_army } completion_reward = { add_political_power = 150 add_stability = 0.10 } }
 
-    # 경제 공통 루트
     focus = { id = SED_industrial_revival icon = GFX_focus_GER_rally_the_industrialists x = -7 y = 2 cost = 10 prerequisite = { focus = SED_rebuild_the_nation } completion_reward = { add_political_power = 50 } }
     focus = { id = SED_infrastructure_program icon = GFX_focus_GER_factories_for_resources x = -7 y = 3 cost = 10 prerequisite = { focus = SED_industrial_revival } completion_reward = { add_political_power = 50 } }
     focus = { id = SED_autarky_ambitions icon = GFX_focus_GER_autarky_ambitions x = -7 y = 4 cost = 10 prerequisite = { focus = SED_industrial_revival } completion_reward = { add_ideas = SED_economic_autarky } }
     focus = { id = SED_four_year_plan icon = GFX_focus_GER_the_four_year_plan_historical x = -7 y = 5 cost = 10 prerequisite = { focus = SED_autarky_ambitions } completion_reward = { add_war_support = 0.05 } }
     focus = { id = SED_organization_todt icon = GFX_focus_GER_organization_todt x = -7 y = 6 cost = 10 prerequisite = { focus = SED_four_year_plan } completion_reward = { add_political_power = 50 } }
-    focus = { id = SED_synthetic_resources icon = GFX_focus_GER_factories_for_resources x = -9 y = 7 cost = 10 prerequisite = { focus = SED_organization_todt } completion_reward = { add_political_power = 75 } }
-    focus = { id = SED_heavy_industry icon = GFX_focus_GER_rally_the_industrialists x = -9 y = 8 cost = 10 prerequisite = { focus = SED_synthetic_resources } completion_reward = { add_stability = 0.05 } }
-    focus = { id = SED_machine_age icon = GFX_focus_GER_realpolitik x = -9 y = 9 cost = 10 prerequisite = { focus = SED_heavy_industry } completion_reward = { add_political_power = 100 } }
-    focus = { id = SED_economic_reserve icon = GFX_focus_GER_autarky_ambitions x = -9 y = 10 cost = 10 prerequisite = { focus = SED_machine_age } completion_reward = { add_war_support = 0.05 } }
 
-    # 군사 공통 루트
     focus = { id = SED_rearmament icon = GFX_focus_GER_aufrustung x = -4 y = 2 cost = 10 prerequisite = { focus = SED_first_step } completion_reward = { add_war_support = 0.05 add_army_experience = 10 add_ideas = SED_armament_program } }
     focus = { id = SED_reorganize_army icon = GFX_focus_GER_reorganize_the_wehrmacht x = -4 y = 3 cost = 10 prerequisite = { focus = SED_rearmament } completion_reward = { add_army_experience = 10 } }
     focus = { id = SED_army_modernization icon = GFX_focus_GER_new_reforms_in_the_wehrmacht x = -4 y = 4 cost = 10 prerequisite = { focus = SED_reorganize_army } completion_reward = { add_army_experience = 15 } }
     focus = { id = SED_panzer_doctrine icon = GFX_focus_GER_adopt_new_panzer_doctrine_historical x = -4 y = 5 cost = 10 prerequisite = { focus = SED_army_modernization } completion_reward = { add_army_experience = 20 } }
     focus = { id = SED_german_army_invincible icon = GFX_focus_GER_german_army_invincible x = -4 y = 6 cost = 10 prerequisite = { focus = SED_panzer_doctrine } completion_reward = { add_war_support = 0.05 } }
-    focus = { id = SED_armored_forces icon = GFX_focus_GER_adopt_new_panzer_doctrine_historical x = -4 y = 7 cost = 10 prerequisite = { focus = SED_german_army_invincible } completion_reward = { add_army_experience = 20 } }
-    focus = { id = SED_motorized_command icon = GFX_focus_GER_combined_arms_historical x = -4 y = 8 cost = 10 prerequisite = { focus = SED_armored_forces } completion_reward = { add_army_experience = 15 } }
-    focus = { id = SED_mountaineer_corps icon = GFX_focus_GER_gebirgsjager x = -4 y = 9 cost = 10 prerequisite = { focus = SED_motorized_command } completion_reward = { add_army_experience = 15 } }
-    focus = { id = SED_logistics_command icon = GFX_focus_GER_new_reforms_in_the_wehrmacht x = -4 y = 10 cost = 10 prerequisite = { focus = SED_mountaineer_corps } completion_reward = { add_army_experience = 10 } }
-    focus = { id = SED_total_army_reform icon = GFX_focus_GER_demonstration_of_military_achievements x = -4 y = 11 cost = 10 prerequisite = { focus = SED_logistics_command } completion_reward = { add_war_support = 0.10 add_army_experience = 25 } }
 
-    # 공군/해군
-    focus = { id = SED_air_armament icon = GFX_focus_GER_airforce x = 9 y = 2 cost = 10 prerequisite = { focus = SED_first_step } completion_reward = { add_air_experience = 10 } }
-    focus = { id = SED_fighter_command icon = GFX_focus_GER_airforce x = 9 y = 3 cost = 10 prerequisite = { focus = SED_air_armament } completion_reward = { add_air_experience = 15 } }
-    focus = { id = SED_stuka_program icon = GFX_focus_GER_sturzkampfbomber_historical x = 9 y = 4 cost = 10 prerequisite = { focus = SED_fighter_command } completion_reward = { add_air_experience = 15 } }
-    focus = { id = SED_long_range_airforce icon = GFX_focus_GER_amerikabomber x = 9 y = 5 cost = 10 prerequisite = { focus = SED_stuka_program } completion_reward = { add_air_experience = 20 } }
-    focus = { id = SED_naval_rearmament icon = GFX_focus_GER_navy x = 11 y = 2 cost = 10 prerequisite = { focus = SED_first_step } completion_reward = { add_navy_experience = 10 } }
-    focus = { id = SED_surface_fleet icon = GFX_focus_GER_high_seas_fleet x = 11 y = 3 cost = 10 prerequisite = { focus = SED_naval_rearmament } completion_reward = { add_navy_experience = 15 } }
-    focus = { id = SED_naval_cooperation icon = GFX_focus_GER_japanese_naval_cooperation x = 11 y = 4 cost = 10 prerequisite = { focus = SED_surface_fleet } completion_reward = { add_navy_experience = 20 } }
-
-    # 외교 및 영토 확장. 실제 합병/영토 변경은 전부 대상국 이벤트에서 처리한다.
-    focus = { id = SED_annex_germany icon = GFX_focus_GER_integrated_economies x = 8 y = 7 cost = 10 prerequisite = { focus = SED_sedman_future } completion_reward = { GER = { country_event = { id = SED.9 } } } }
+    focus = { id = SED_annex_germany icon = GFX_focus_GER_integrated_economies x = 8 y = 7 cost = 10 prerequisite = { focus = SED_sedman_state } completion_reward = { GER = { country_event = { id = SED.9 } } } }
     focus = { id = SED_anschluss_question icon = GFX_focus_GER_anschluss_historical x = 8 y = 8 cost = 10 prerequisite = { focus = SED_annex_germany } completion_reward = { AUS = { country_event = { id = SED.10 } } } }
     focus = { id = SED_czechoslovak_demand icon = GFX_focus_GER_fate_of_czechoslovakia_historical x = 8 y = 9 cost = 10 prerequisite = { focus = SED_anschluss_question } completion_reward = { CZE = { country_event = { id = SED.11 } } } }
     focus = { id = SED_danzig_demand icon = GFX_focus_GER_danzig_or_war_historical x = 8 y = 10 cost = 10 prerequisite = { focus = SED_czechoslovak_demand } completion_reward = { POL = { country_event = { id = SED.12 } } } }
     focus = { id = SED_further_polish_demands icon = GFX_focus_GER_further_demands_for_polish_territory x = 8 y = 11 cost = 10 prerequisite = { focus = SED_danzig_demand } completion_reward = { add_war_support = 0.05 } }
     focus = { id = SED_mitteleuropa icon = GFX_focus_GER_mitteleuropa x = 8 y = 12 cost = 10 prerequisite = { focus = SED_further_polish_demands } completion_reward = { add_political_power = 100 } }
     focus = { id = SED_european_confederation icon = GFX_focus_GER_european_confederation x = 8 y = 13 cost = 10 prerequisite = { focus = SED_mitteleuropa } completion_reward = { add_stability = 0.05 } }
-    focus = { id = SED_alliance_korea icon = GFX_focus_GER_brothers_in_arms x = 10 y = 7 cost = 10 prerequisite = { focus = SED_first_step } completion_reward = { add_political_power = 75 } }
-    focus = { id = SED_korean_cooperation icon = GFX_focus_GER_japanese_naval_cooperation x = 10 y = 8 cost = 10 prerequisite = { focus = SED_alliance_korea } completion_reward = { add_navy_experience = 10 } }
-    focus = { id = SED_asian_economy icon = GFX_focus_GER_integrated_economies x = 10 y = 9 cost = 10 prerequisite = { focus = SED_korean_cooperation } completion_reward = { add_political_power = 75 } }
-    focus = { id = SED_total_war_preparations icon = GFX_focus_GER_all_for_the_front x = 10 y = 10 cost = 10 prerequisite = { focus = SED_asian_economy } completion_reward = { add_war_support = 0.10 add_army_experience = 25 } }
 
-    focus = { id = SED_complete_sebensraum icon = GFX_focus_GER_hegemony_over_europe x = 6 y = 16 cost = 10 prerequisite = { focus = SED_european_confederation focus = SED_total_war_preparations } completion_reward = { add_political_power = 150 add_stability = 0.05 add_war_support = 0.10 } }
-    focus = { id = SED_german_unification icon = GFX_focus_GER_integrated_economies x = 6 y = 17 cost = 10 prerequisite = { focus = SED_complete_sebensraum } completion_reward = { add_stability = 0.10 add_political_power = 200 } }
-    focus = { id = SED_proclaim_sedmania icon = GFX_focus_GER_national_unity x = 6 y = 18 cost = 10 prerequisite = { focus = SED_german_unification } completion_reward = { add_political_power = 250 add_stability = 0.15 add_war_support = 0.15 } }
+    # 제2차 세계대전 전개
+    focus = { id = SED_war_with_poland icon = GFX_focus_GER_danzig_or_war_historical x = 8 y = 14 cost = 10 prerequisite = { focus = SED_further_polish_demands } completion_reward = { SED = { country_event = { id = SED.20 } } } }
+    focus = { id = SED_general_mobilization icon = GFX_focus_GER_all_for_the_front x = 10 y = 15 cost = 10 prerequisite = { focus = SED_war_with_poland } completion_reward = { add_war_support = 0.10 add_army_experience = 25 add_political_power = 100 } }
+    focus = { id = SED_western_front icon = GFX_focus_GER_around_maginot_historical x = 10 y = 16 cost = 10 prerequisite = { focus = SED_general_mobilization } completion_reward = { add_war_support = 0.10 } }
+    focus = { id = SED_defeat_france icon = GFX_focus_GER_around_maginot_historical x = 10 y = 17 cost = 10 prerequisite = { focus = SED_western_front } completion_reward = { add_army_experience = 30 add_war_support = 0.10 } }
+    focus = { id = SED_battle_of_britain icon = GFX_focus_GER_airforce x = 12 y = 17 cost = 10 prerequisite = { focus = SED_western_front } completion_reward = { add_air_experience = 25 } }
+    focus = { id = SED_eastern_campaign icon = GFX_focus_GER_eastern_grand_duchies x = 10 y = 18 cost = 10 prerequisite = { focus = SED_defeat_france } completion_reward = { add_army_experience = 30 add_war_support = 0.10 } }
+    focus = { id = SED_total_war icon = GFX_focus_GER_all_for_the_front x = 12 y = 18 cost = 10 prerequisite = { focus = SED_battle_of_britain focus = SED_eastern_campaign } completion_reward = { add_war_support = 0.15 add_political_power = 150 } }
+    focus = { id = SED_war_industry icon = GFX_focus_GER_german_military x = 12 y = 19 cost = 10 prerequisite = { focus = SED_total_war } completion_reward = { add_ideas = SED_total_mobilization } }
+
+    focus = { id = SED_alliance_korea icon = GFX_focus_GER_brothers_in_arms x = 14 y = 2 cost = 10 prerequisite = { focus = SED_first_step } completion_reward = { add_political_power = 75 } }
+    focus = { id = SED_korean_cooperation icon = GFX_focus_GER_japanese_naval_cooperation x = 14 y = 3 cost = 10 prerequisite = { focus = SED_alliance_korea } completion_reward = { add_navy_experience = 10 } }
+    focus = { id = SED_asian_economy icon = GFX_focus_GER_integrated_economies x = 14 y = 4 cost = 10 prerequisite = { focus = SED_korean_cooperation } completion_reward = { add_political_power = 75 } }
+    focus = { id = SED_total_war_preparations icon = GFX_focus_GER_all_for_the_front x = 14 y = 5 cost = 10 prerequisite = { focus = SED_asian_economy } completion_reward = { add_war_support = 0.10 add_army_experience = 25 } }
+
+    focus = { id = SED_complete_sebensraum icon = GFX_focus_GER_hegemony_over_europe x = 10 y = 21 cost = 10 prerequisite = { focus = SED_war_industry } completion_reward = { add_political_power = 150 add_stability = 0.05 add_war_support = 0.10 } }
+    focus = { id = SED_german_unification icon = GFX_focus_GER_integrated_economies x = 10 y = 22 cost = 10 prerequisite = { focus = SED_complete_sebensraum } completion_reward = { add_stability = 0.10 add_political_power = 200 } }
+    focus = { id = SED_proclaim_sedmania icon = GFX_focus_GER_national_unity x = 10 y = 23 cost = 10 prerequisite = { focus = SED_german_unification } completion_reward = { add_political_power = 250 add_stability = 0.15 add_war_support = 0.15 } }
 }
