@@ -1,0 +1,10 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            if = {
+                limit = { original_tag = SED }
+                add_ideas = SED_national_recovery
+            }
+        }
+    }
+}
