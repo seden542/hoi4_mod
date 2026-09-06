@@ -1,11 +1,74 @@
 ideas = {
     country = {
         SED_national_recovery = {
-            picture = generic_industry
+            picture = idea_GER_recovering_economy
             allowed = { original_tag = SED }
             modifier = {
                 stability_factor = 0.05
                 industrial_capacity_factory = 0.05
+            }
+        }
+
+        SED_armament_program = {
+            picture = idea_GER_aufrustung
+            allowed = { original_tag = SED }
+            modifier = {
+                army_org_factor = 0.05
+                industrial_capacity_military_factory = 0.05
+            }
+        }
+
+        SED_prussian_legacy = {
+            picture = idea_GER_prussian_legacy
+            allowed = { original_tag = SED }
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+            }
+        }
+
+        SED_economic_autarky = {
+            picture = idea_GER_autarky
+            allowed = { original_tag = SED }
+            modifier = {
+                consumer_goods_factor = -0.05
+                production_speed_industrial_complex_factor = 0.05
+            }
+        }
+
+        SED_german_trade = {
+            picture = idea_GER_german_trade
+            allowed = { original_tag = SED }
+            modifier = {
+                trade_opinion_factor = 0.10
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+
+        SED_military_industry = {
+            picture = idea_GER_german_military
+            allowed = { original_tag = SED }
+            modifier = {
+                industrial_capacity_military_factory = 0.10
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+
+        SED_conquest_economy = {
+            picture = idea_GER_economy_of_conquest
+            allowed = { original_tag = SED }
+            modifier = {
+                consumer_goods_factor = -0.05
+                war_support_factor = 0.05
+            }
+        }
+
+        SED_wirtschaftswunder = {
+            picture = idea_GER_wirtschaftswunder
+            allowed = { original_tag = SED }
+            modifier = {
+                production_speed_industrial_complex_factor = 0.10
+                production_speed_infrastructure_factor = 0.10
             }
         }
     }
