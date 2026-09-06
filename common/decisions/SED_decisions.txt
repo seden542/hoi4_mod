@@ -1,0 +1,37 @@
+decisions = {
+    SED_sedmania_category = {
+        icon = GFX_decision_generic_political_address
+        visible = {
+            original_tag = SED
+            has_country_flag = SED_sedmania_decision_unlocked
+        }
+        allowed = {
+            original_tag = SED
+            has_country_flag = SED_sedmania_decision_unlocked
+        }
+
+        SED_proclaim_sedmania_decision = {
+            icon = GFX_decision_generic_political_address
+            priority = 10
+            visible = {
+                has_country_flag = SED_sedmania_decision_unlocked
+                NOT = { has_country_flag = SED_sedmania_proclaimed }
+            }
+            available = {
+                has_country_flag = SED_sedmania_decision_unlocked
+                NOT = { has_country_flag = SED_sedmania_proclaimed }
+                has_stability > 0.30
+            }
+            cost = 100
+            fire_only_once = yes
+            complete_effect = {
+                set_country_flag = SED_sedmania_proclaimed
+                add_political_power = 150
+                add_stability = 0.10
+                add_war_support = 0.10
+                add_ideas = SED_centralized_state
+                add_ideas = SED_civic_unity
+            }
+        }
+    }
+}
