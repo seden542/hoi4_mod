@@ -1,0 +1,10 @@
+l_korean:
+ SED_first_step:0 "세든의 첫걸음"
+ SED_first_step_desc:0 "새로운 시대를 향한 첫발을 내딛는다."
+ SED_build_the_industry:0 "산업 기반 확충"
+ SED_build_the_industry_desc:0 "국가의 산업력을 강화하고 생산 기반을 확보한다."
+ SED_strengthen_the_state:0 "국가 역량 강화"
+ SED_strengthen_the_state_desc:0 "정부의 통제력과 국민의 결속을 높인다."
+ SED:0 "세든 연방"
+ SED_DEF:0 "세든 연방"
+ SED_ADJ:0 "세든"
