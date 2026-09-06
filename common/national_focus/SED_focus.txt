@@ -120,8 +120,8 @@ focus_tree = {
     focus = { id = SED_western_union icon = GFX_focus_GER_european_confederation x = 18 y = 18 cost = 10 prerequisite = { focus = SED_war_industry } completion_reward = { add_political_power = 100 } }
     focus = { id = SED_continental_order icon = GFX_focus_GER_hegemony_over_europe x = 18 y = 19 cost = 10 prerequisite = { focus = SED_western_union } completion_reward = { add_stability = 0.05 } }
 
-    focus = { id = SED_befriend_italy icon = GFX_focus_GER_befriend_italy x = 11 y = 21 cost = 10 prerequisite = { focus = SED_european_confederation } completion_reward = { add_political_power = 50 } }
-    focus = { id = SED_befriend_japan icon = GFX_focus_GER_befriend_japan x = 13 y = 21 cost = 10 prerequisite = { focus = SED_european_confederation } completion_reward = { add_political_power = 50 } }
+    focus = { id = SED_befriend_italy icon = GFX_focus_GER_befriend_italy x = 11 y = 21 cost = 10 prerequisite = { focus = SED_sedman_continuity } completion_reward = { add_political_power = 50 } }
+    focus = { id = SED_befriend_japan icon = GFX_focus_GER_befriend_japan x = 13 y = 21 cost = 10 prerequisite = { focus = SED_sedman_continuity } completion_reward = { add_political_power = 50 } }
     focus = { id = SED_customs_union icon = GFX_focus_GER_customs_union x = 11 y = 22 cost = 10 prerequisite = { focus = SED_befriend_italy } completion_reward = { add_political_power = 75 } }
     focus = { id = SED_brothers_in_arms icon = GFX_focus_GER_brothers_in_arms x = 13 y = 22 cost = 10 prerequisite = { focus = SED_befriend_japan } completion_reward = { add_war_support = 0.05 } }
     focus = { id = SED_mitteleuropa icon = GFX_focus_GER_mitteleuropa x = 11 y = 23 cost = 10 prerequisite = { focus = SED_customs_union } completion_reward = { add_political_power = 100 } }
