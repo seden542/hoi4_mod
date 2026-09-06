@@ -11,7 +11,7 @@ focus_tree = {
 
     focus = {
         id = SED_first_step
-        icon = GFX_goal_generic_construct_civilian
+        icon = GFX_goal_generic_political_pressure
         x = 0
         y = 0
         cost = 10
@@ -21,28 +21,131 @@ focus_tree = {
     }
 
     focus = {
-        id = SED_build_the_industry
-        icon = GFX_goal_generic_construct_civ_factory
-        x = -1
+        id = SED_rebuild_the_nation
+        icon = GFX_goal_generic_construct_civilian
+        x = 0
         y = 1
         cost = 10
         prerequisite = { focus = SED_first_step }
         completion_reward = {
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes
-            }
+            add_stability = 0.05
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = SED_rearmament
+        icon = GFX_goal_generic_army_motorized
+        x = -2
+        y = 2
+        cost = 10
+        prerequisite = { focus = SED_rebuild_the_nation }
+        completion_reward = {
+            add_war_support = 0.05
+            add_army_experience = 10
+        }
+    }
+
+    focus = {
+        id = SED_rhineland_remilitarization
+        icon = GFX_goal_generic_construct_military
+        x = -2
+        y = 3
+        cost = 10
+        prerequisite = { focus = SED_rearmament }
+        completion_reward = {
+            add_political_power = 75
+            add_war_support = 0.05
+        }
+    }
+
+    focus = {
+        id = SED_sebensraum
+        icon = GFX_goal_generic_territory_or_war
+        x = -2
+        y = 4
+        cost = 10
+        prerequisite = { focus = SED_rhineland_remilitarization }
+        completion_reward = {
+            add_army_experience = 15
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = SED_korean_empire_alliance
+        icon = GFX_goal_generic_alliance
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = SED_rebuild_the_nation }
+        completion_reward = {
+            add_political_power = 75
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = SED_prepare_for_total_war
+        icon = GFX_goal_generic_major_war
+        x = 0
+        y = 5
+        cost = 10
+        prerequisite = { focus = SED_sebensraum }
+        prerequisite = { focus = SED_korean_empire_alliance }
+        completion_reward = {
+            add_war_support = 0.10
+            add_army_experience = 25
+        }
+    }
+
+    focus = {
+        id = SED_complete_sebensraum
+        icon = GFX_goal_generic_territory_or_war
+        x = 0
+        y = 6
+        cost = 10
+        prerequisite = { focus = SED_prepare_for_total_war }
+        completion_reward = {
+            add_political_power = 100
+            add_stability = 0.05
+            add_war_support = 0.05
+        }
+    }
+
+    focus = {
+        id = SED_proclaim_sedmania
+        icon = GFX_goal_generic_national_unity
+        x = 0
+        y = 7
+        cost = 10
+        prerequisite = { focus = SED_complete_sebensraum }
+        completion_reward = {
+            add_political_power = 200
+            add_stability = 0.10
+            add_war_support = 0.10
+        }
+    }
+
+    focus = {
+        id = SED_build_the_industry
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 3
+        cost = 10
+        prerequisite = { focus = SED_rebuild_the_nation }
+        completion_reward = {
+            add_political_power = 50
         }
     }
 
     focus = {
         id = SED_strengthen_the_state
         icon = GFX_goal_generic_political_pressure
-        x = 1
-        y = 1
+        x = 4
+        y = 4
         cost = 10
-        prerequisite = { focus = SED_first_step }
+        prerequisite = { focus = SED_build_the_industry }
         completion_reward = {
             add_stability = 0.05
             add_war_support = 0.05
