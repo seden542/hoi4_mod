@@ -1,0 +1,12 @@
+SED_sedmania_category = {
+    icon = generic_political_reform
+    priority = 10
+    allowed = {
+        original_tag = SED
+    }
+    visible = {
+        original_tag = SED
+        has_country_flag = SED_sedmania_decision_unlocked
+    }
+    visible_when_empty = yes
+}
