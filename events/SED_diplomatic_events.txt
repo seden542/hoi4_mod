@@ -6,7 +6,7 @@ country_event = {
     desc = SED.9.d
     picture = GFX_report_event_generic_diplomatic_exchange
     is_triggered_only = yes
-    option = { name = SED.9.a ai_chance = { factor = 70 } SED = { annex_country = GER } }
+    option = { name = SED.9.a ai_chance = { factor = 70 } SED = { annex_country = { target = GER } } }
     option = { name = SED.9.b ai_chance = { factor = 30 } SED = { add_war_support = 0.05 declare_war_on = { target = GER type = annex_everything } } }
 }
 
@@ -16,7 +16,7 @@ country_event = {
     desc = SED.10.d
     picture = GFX_report_event_generic_diplomatic_exchange
     is_triggered_only = yes
-    option = { name = SED.10.a ai_chance = { factor = 70 } SED = { annex_country = AUS } }
+    option = { name = SED.10.a ai_chance = { factor = 70 } SED = { annex_country = { target = AUS } } }
     option = { name = SED.10.b ai_chance = { factor = 30 } SED = { add_war_support = 0.05 declare_war_on = { target = AUS type = annex_everything } } }
 }
 
