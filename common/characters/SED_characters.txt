@@ -2,7 +2,7 @@ characters = {
     SED_Adolf_Hermann = {
         name = "세든"
         country_leader = {
-            ideology = fascism
+            ideology = nazism
             traits = { charismatic }
         }
     }
@@ -67,7 +67,7 @@ characters = {
     SED_Otto_Falk = {
         name = "오토 팔크"
         advisor = {
-            slot = military_high_command
+            slot = high_command
             cost = 150
             traits = { army_chief_offensive_2 }
         }
