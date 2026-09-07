@@ -8,7 +8,7 @@ ideas = {
         SED_armament_program = {
             picture = idea_GER_aufrustung
             allowed = { original_tag = SED }
-            modifier = { army_org_factor = 0.05 industrial_capacity_military_factory = 0.05 }
+            modifier = { army_org_factor = 0.05 industrial_capacity_factory = 0.05 }
         }
         SED_prussian_legacy = {
             picture = idea_GER_prussian_legacy
@@ -28,7 +28,7 @@ ideas = {
         SED_military_industry = {
             picture = idea_GER_german_military
             allowed = { original_tag = SED }
-            modifier = { industrial_capacity_military_factory = 0.10 industrial_capacity_dockyard = 0.05 }
+            modifier = { industrial_capacity_factory = 0.10 industrial_capacity_dockyard = 0.05 }
         }
         SED_conquest_economy = {
             picture = idea_GER_economy_of_conquest
