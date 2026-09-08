@@ -1,0 +1,167 @@
+add_namespace = SED
+
+country_event = {
+ id = SED.30
+ title = SED.30.t
+ desc = SED.30.d
+ is_triggered_only = yes
+ option = { name = SED.30.a ai_chance = { factor = 50 } add_ideas = SED_national_recovery set_country_flag = SED_1936_recovery }
+ option = { name = SED.30.b ai_chance = { factor = 50 } add_ideas = SED_armament_program set_country_flag = SED_1936_rearmament }
+}
+
+country_event = {
+ id = SED.31
+ title = SED.31.t
+ desc = SED.31.d
+ is_triggered_only = yes
+ option = { name = SED.31.a ai_chance = { factor = 60 } add_ideas = SED_armament_program add_war_support = 0.03 }
+ option = { name = SED.31.b ai_chance = { factor = 40 } add_ideas = SED_wirtschaftswunder }
+}
+
+country_event = {
+ id = SED.32
+ title = SED.32.t
+ desc = SED.32.d
+ is_triggered_only = yes
+ option = { name = SED.32.a ai_chance = { factor = 55 } add_ideas = SED_prussian_legacy set_country_flag = SED_staff_reform }
+ option = { name = SED.32.b ai_chance = { factor = 45 } add_ideas = SED_reformed_administration }
+}
+
+country_event = {
+ id = SED.33
+ title = SED.33.t
+ desc = SED.33.d
+ is_triggered_only = yes
+ option = { name = SED.33.a ai_chance = { factor = 55 } add_ideas = SED_german_trade set_country_flag = SED_trade_bloc }
+ option = { name = SED.33.b ai_chance = { factor = 45 } add_ideas = SED_economic_autarky set_country_flag = SED_autarky_policy }
+}
+
+country_event = {
+ id = SED.34
+ title = SED.34.t
+ desc = SED.34.d
+ is_triggered_only = yes
+ option = { name = SED.34.a ai_chance = { factor = 100 } country_event = { id = SED.9 } }
+}
+
+country_event = {
+ id = SED.35
+ title = SED.35.t
+ desc = SED.35.d
+ is_triggered_only = yes
+ option = { name = SED.35.a ai_chance = { factor = 100 } country_event = { id = SED.10 } }
+}
+
+country_event = {
+ id = SED.36
+ title = SED.36.t
+ desc = SED.36.d
+ is_triggered_only = yes
+ option = { name = SED.36.a ai_chance = { factor = 100 } country_event = { id = SED.11 } }
+}
+
+country_event = {
+ id = SED.37
+ title = SED.37.t
+ desc = SED.37.d
+ is_triggered_only = yes
+ option = { name = SED.37.a ai_chance = { factor = 100 } country_event = { id = SED.12 } }
+}
+
+country_event = {
+ id = SED.38
+ title = SED.38.t
+ desc = SED.38.d
+ is_triggered_only = yes
+ option = { name = SED.38.a ai_chance = { factor = 100 } country_event = { id = SED.20 } }
+}
+
+country_event = {
+ id = SED.39
+ title = SED.39.t
+ desc = SED.39.d
+ is_triggered_only = yes
+ option = { name = SED.39.a ai_chance = { factor = 65 } add_ideas = SED_total_mobilization set_country_flag = SED_total_mobilization }
+ option = { name = SED.39.b ai_chance = { factor = 35 } add_war_support = 0.02 }
+}
+
+country_event = {
+ id = SED.40
+ title = SED.40.t
+ desc = SED.40.d
+ is_triggered_only = yes
+ option = { name = SED.40.a ai_chance = { factor = 70 } add_ideas = SED_conquest_economy set_country_flag = SED_european_war }
+ option = { name = SED.40.b ai_chance = { factor = 30 } add_stability = 0.03 }
+}
+
+country_event = {
+ id = SED.41
+ title = SED.41.t
+ desc = SED.41.d
+ is_triggered_only = yes
+ option = { name = SED.41.a ai_chance = { factor = 65 } set_country_flag = SED_western_offensive add_war_support = 0.05 }
+ option = { name = SED.41.b ai_chance = { factor = 35 } set_country_flag = SED_western_defense add_stability = 0.03 }
+}
+
+country_event = {
+ id = SED.42
+ title = SED.42.t
+ desc = SED.42.d
+ is_triggered_only = yes
+ option = { name = SED.42.a ai_chance = { factor = 55 } set_country_flag = SED_atlantic_war add_war_support = 0.03 }
+ option = { name = SED.42.b ai_chance = { factor = 45 } set_country_flag = SED_land_priority add_army_experience = 5 }
+}
+
+country_event = {
+ id = SED.43
+ title = SED.43.t
+ desc = SED.43.d
+ is_triggered_only = yes
+ option = { name = SED.43.a ai_chance = { factor = 60 } set_country_flag = SED_eastern_preparation add_war_support = 0.05 }
+ option = { name = SED.43.b ai_chance = { factor = 40 } set_country_flag = SED_eastern_delay add_stability = 0.03 }
+}
+
+country_event = {
+ id = SED.44
+ title = SED.44.t
+ desc = SED.44.d
+ is_triggered_only = yes
+ option = { name = SED.44.a ai_chance = { factor = 75 } set_country_flag = SED_unified_war_command add_war_support = 0.05 }
+ option = { name = SED.44.b ai_chance = { factor = 25 } add_political_power = 50 }
+}
+
+country_event = {
+ id = SED.45
+ title = SED.45.t
+ desc = SED.45.d
+ is_triggered_only = yes
+ option = { name = SED.45.a ai_chance = { factor = 60 } add_ideas = SED_conquest_economy set_country_flag = SED_long_war_economy }
+ option = { name = SED.45.b ai_chance = { factor = 40 } add_ideas = SED_economic_autarky set_country_flag = SED_civilian_priority }
+}
+
+country_event = {
+ id = SED.46
+ title = SED.46.t
+ desc = SED.46.d
+ is_triggered_only = yes
+ option = { name = SED.46.a ai_chance = { factor = 60 } add_war_support = 0.05 set_country_flag = SED_total_war_cost }
+ option = { name = SED.46.b ai_chance = { factor = 40 } add_stability = 0.05 add_political_power = 50 }
+}
+
+country_event = {
+ id = SED.47
+ title = SED.47.t
+ desc = SED.47.d
+ is_triggered_only = yes
+ option = { name = SED.47.a ai_chance = { factor = 65 } set_country_flag = SED_final_defense add_stability = 0.03 }
+ option = { name = SED.47.b ai_chance = { factor = 35 } set_country_flag = SED_mobile_reserves add_war_support = 0.02 }
+}
+
+country_event = {
+ id = SED.48
+ title = SED.48.t
+ desc = SED.48.d
+ is_triggered_only = yes
+ option = { name = SED.48.a ai_chance = { factor = 60 } remove_ideas = SED_total_mobilization add_stability = 0.05 set_country_flag = SED_postwar_transition }
+ option = { name = SED.48.b ai_chance = { factor = 40 } add_war_support = 0.05 set_country_flag = SED_continue_war }
+}
