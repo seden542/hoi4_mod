@@ -1,73 +1,305 @@
 units = {
     division_template = "SED_Infantry"
-    division_template = "SED_Reserve_Infantry"
-    division_template = "SED_Motorized"
     division_template = "SED_Armored"
-    division_template = "SED_Mountain"
 
     division = {
-        name = "1. Seden Infantry Division"
-        location = 6375
-        division_template = "SED_Infantry"
+        name = "1. Seden Armored Division"
+        location = 268
+        division_template = "SED_Armored"
     }
-
     division = {
-        name = "2. Seden Infantry Division"
-        location = 9327
-        division_template = "SED_Infantry"
+        name = "2. Seden Armored Division"
+        location = 293
+        division_template = "SED_Armored"
     }
-
     division = {
-        name = "3. Seden Infantry Division"
-        location = 9346
-        division_template = "SED_Infantry"
+        name = "3. Seden Armored Division"
+        location = 321
+        division_template = "SED_Armored"
     }
-
     division = {
-        name = "4. Seden Infantry Division"
-        location = 6402
-        division_template = "SED_Infantry"
+        name = "4. Seden Armored Division"
+        location = 9294
+        division_template = "SED_Armored"
     }
-
     division = {
-        name = "5. Seden Reserve Division"
-        location = 9398
-        division_template = "SED_Reserve_Infantry"
+        name = "5. Seden Armored Division"
+        location = 11276
+        division_template = "SED_Armored"
     }
-
     division = {
-        name = "6. Seden Reserve Division"
-        location = 11245
-        division_template = "SED_Reserve_Infantry"
+        name = "6. Seden Armored Division"
+        location = 11305
+        division_template = "SED_Armored"
     }
-
     division = {
-        name = "1. Motorized Division"
-        location = 3351
-        division_template = "SED_Motorized"
+        name = "7. Seden Armored Division"
+        location = 349
+        division_template = "SED_Armored"
     }
-
     division = {
-        name = "1. Armored Division"
-        location = 3380
+        name = "8. Seden Armored Division"
+        location = 3207
+        division_template = "SED_Armored"
+    }
+    division = {
+        name = "9. Seden Armored Division"
+        location = 3258
+        division_template = "SED_Armored"
+    }
+    division = {
+        name = "10. Seden Armored Division"
+        location = 3312
+        division_template = "SED_Armored"
+    }
+    division = {
+        name = "11. Seden Armored Division"
+        location = 3340
+        division_template = "SED_Armored"
+    }
+    division = {
+        name = "12. Seden Armored Division"
+        location = 9388
         division_template = "SED_Armored"
     }
 
     division = {
-        name = "1. Mountain Division"
-        location = 9372
-        division_template = "SED_Mountain"
+        name = "1. Seden Infantry Division"
+        location = 13257
+        division_template = "SED_Infantry"
     }
-
+    division = {
+        name = "2. Seden Infantry Division"
+        location = 444
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "3. Seden Infantry Division"
+        location = 537
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "4. Seden Infantry Division"
+        location = 3473
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "5. Seden Infantry Division"
+        location = 3572
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "6. Seden Infantry Division"
+        location = 6236
+        division_template = "SED_Infantry"
+    }
     division = {
         name = "7. Seden Infantry Division"
-        location = 266
+        location = 9387
         division_template = "SED_Infantry"
     }
-
     division = {
         name = "8. Seden Infantry Division"
-        location = 11386
+        location = 11478
         division_template = "SED_Infantry"
     }
-}
+    division = {
+        name = "9. Seden Infantry Division"
+        location = 268
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "10. Seden Infantry Division"
+        location = 293
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "11. Seden Infantry Division"
+        location = 321
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "12. Seden Infantry Division"
+        location = 9294
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "13. Seden Infantry Division"
+        location = 11276
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "14. Seden Infantry Division"
+        location = 11305
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "15. Seden Infantry Division"
+        location = 349
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "16. Seden Infantry Division"
+        location = 3207
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "17. Seden Infantry Division"
+        location = 3258
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "18. Seden Infantry Division"
+        location = 3312
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "19. Seden Infantry Division"
+        location = 3340
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "20. Seden Infantry Division"
+        location = 9388
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "21. Seden Infantry Division"
+        location = 13257
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "22. Seden Infantry Division"
+        location = 444
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "23. Seden Infantry Division"
+        location = 537
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "24. Seden Infantry Division"
+        location = 3473
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "25. Seden Infantry Division"
+        location = 3572
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "26. Seden Infantry Division"
+        location = 6236
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "27. Seden Infantry Division"
+        location = 9387
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "28. Seden Infantry Division"
+        location = 11478
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "29. Seden Infantry Division"
+        location = 268
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "30. Seden Infantry Division"
+        location = 293
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "31. Seden Infantry Division"
+        location = 321
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "32. Seden Infantry Division"
+        location = 9294
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "33. Seden Infantry Division"
+        location = 11276
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "34. Seden Infantry Division"
+        location = 11305
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "35. Seden Infantry Division"
+        location = 349
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "36. Seden Infantry Division"
+        location = 3207
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "37. Seden Infantry Division"
+        location = 3258
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "38. Seden Infantry Division"
+        location = 3312
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "39. Seden Infantry Division"
+        location = 3340
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "40. Seden Infantry Division"
+        location = 9388
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "41. Seden Infantry Division"
+        location = 13257
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "42. Seden Infantry Division"
+        location = 444
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "43. Seden Infantry Division"
+        location = 537
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "44. Seden Infantry Division"
+        location = 3473
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "45. Seden Infantry Division"
+        location = 3572
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "46. Seden Infantry Division"
+        location = 6236
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "47. Seden Infantry Division"
+        location = 9387
+        division_template = "SED_Infantry"
+    }
+    division = {
+        name = "48. Seden Infantry Division"
+        location = 11478
+        division_template = "SED_Infantry"
+    }
