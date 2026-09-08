@@ -109,7 +109,7 @@ country_event = {
  desc = SED.42.d
  is_triggered_only = yes
  option = { name = SED.42.a ai_chance = { factor = 55 } set_country_flag = SED_atlantic_war add_war_support = 0.03 }
- option = { name = SED.42.b ai_chance = { factor = 45 } set_country_flag = SED_land_priority add_army_experience = 5 }
+ option = { name = SED.42.b ai_chance = { factor = 45 } set_country_flag = SED_land_priority army_experience = 5 }
 }
 
 country_event = {
